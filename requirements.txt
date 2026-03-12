@@ -1,0 +1,36 @@
+# Sunny AI v5.0 - Requirements
+# Install: pip install -r requirements.txt
+
+# QUAN TRONG: Cai torch TRUOC voi --no-deps
+# pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121 --no-deps --force-reinstall
+
+# AI Model
+transformers
+accelerate
+bitsandbytes
+unsloth
+
+# Vector Memory
+faiss-cpu
+sentence-transformers
+
+# Web Server
+fastapi
+uvicorn[standard]
+websockets
+python-multipart
+psutil
+
+# Tools
+duckduckgo-search
+requests
+beautifulsoup4
+PyPDF2
+python-docx
+openpyxl
+pandas
+
+# Voice (optional)
+edge-tts
+pygame
+SpeechRecognition
