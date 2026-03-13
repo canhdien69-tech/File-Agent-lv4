@@ -744,7 +744,7 @@ def process(ws: WebSocket, msg: str, loop):
 
         # ── Execute ───────────────────────────────────────────
         def status_cb(txt): send({"type":"tool","text":txt})
-        tool_data = executor.run(plan, msg, conv.get(), status_cb)
+        tool_data = executor.run(plan, msg, conv.get(), status_cb, use_react=True)
 
         # ── Stream answer ─────────────────────────────────────
         send({"type":"stream_start"})
